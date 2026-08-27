@@ -22,7 +22,6 @@ int y = 10;
 const int h = 20;
 const int i = 25;
 
-
 int main()
 {
     // Local (stack) variables
