@@ -4,6 +4,8 @@
 int main()
 {
     LinkedList<char> a {'a', 'b', 'c'};
+    // LinkedList<char> b = a;
+    // b = a;
     a.insert_front('x');
     a.insert_front('y');
     a.insert_front('z');
