@@ -21,7 +21,8 @@ int binary_search(const std::vector<T>& data, const T& value)
     int start = 0;
     int end = data.size() - 1;
     while (start <= end) {
-        int mid = (start + end) / 2;
+        // int mid = (start + end) / 2;
+        int mid = start + ((end - start) / 2); // Avoids overflow problem
         if (value == data.at(mid)) {
             return mid;
         } else if (value < data.at(mid)) {
