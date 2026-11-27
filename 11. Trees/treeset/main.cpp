@@ -15,7 +15,7 @@ void sum_int(int x)
 
 int main()
 {
-    TreeSet<int> t {10, 5, 15, 2, 7, 11, 20};
+    TreeSet<int> t {10, 5, 15, 2, 7, 11, 20, 25};
     std::cout << t.contains(2) << "\n";
     std::cout << t.contains(3) << "\n";
     t.inorder(print_int);
@@ -28,6 +28,10 @@ int main()
     t.levelorder(print_int);
     std::cout << "\n";
     std::cout << t.height() << "\n";
+    std::cout << t.is_full() << "\n";
+    std::cout << t.leaf_count() << "\n";
+    std::cout << t.is_perfect() << "\n";
+
 
     return 0;
 }
